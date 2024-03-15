@@ -1,0 +1,21 @@
+Function: insert_note
+
+Input: None
+
+Output: None
+
+Pseudocode:
+1. Initialize an empty list 'note_cache' to store the new note data.
+2. Prompt the user to input the note content.
+3. Check if the input note content is empty:
+    a. If the note content is empty, print a message indicating an empty note and exit the function.
+4. Append the input note content to the 'note_cache' list.
+5. Prompt the user to input a heading for the note (optional).
+6. Check if the input heading is empty:
+    a. If the heading is empty, insert 'False' and an empty string ('') into the 'note_cache' list to indicate no heading.
+    b. If the heading is not empty, insert 'True' and the heading into the 'note_cache' list.
+7. Append the 'note_cache' list to the global 'notes' list to store the new note data.
+8. Update the meta-data of the 'notes' list:
+    a. Set the 'has_notes' flag to True.
+    b. Increment the 'amount_notes' count by 1.
+9. Print a confirmation message indicating that the note has been created.

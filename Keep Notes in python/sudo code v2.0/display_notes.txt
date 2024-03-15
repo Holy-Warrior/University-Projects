@@ -1,0 +1,21 @@
+Function: display_notes
+
+Input: None
+
+Output: None
+
+Pseudocode:
+1. Initialize variables 'skip' to True and 'counter' to -1.
+2. Iterate over each note in the global 'notes' list:
+    a. Increment 'counter' by 1.
+    b. If 'skip' is True (indicating the first iteration):
+        i. Print a header indicating the start of the notes menu.
+        ii. Set 'skip' to False to skip subsequent iterations.
+    c. If the note is not empty:
+        i. Print the index of the note as 'Note-counter'.
+        ii. If the note has a heading:
+            - Print the heading.
+        iii. Print the first 10 characters of the note content followed by ellipsis.
+    d. If the note is empty:
+        i. Print a message indicating an incomplete note.
+3. Print a footer indicating the end of the notes menu.

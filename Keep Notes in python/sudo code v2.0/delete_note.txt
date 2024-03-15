@@ -1,0 +1,33 @@
+Function: delete_note
+
+Input: 
+  - delete_from_index (optional): The index of the note to be deleted directly from the list (default: 0)
+
+Output: None
+
+Pseudocode:
+1. If 'delete_from_index' is 0:
+    a. Display the list of available notes to the user.
+    b. Prompt the user to choose a note to delete by its index.
+    c. If the chosen index is invalid:
+        i. Print an error message indicating the invalid index.
+        ii. Exit the function.
+    d. If the chosen index is valid:
+        i. Retrieve the note data corresponding to the chosen index from the global 'notes' list.
+        ii. Display the heading and content of the chosen note.
+        iii. Prompt the user for confirmation to delete the note.
+        iv. If the user confirms deletion:
+            - Remove the note data from the global 'notes' list.
+            - Print a confirmation message indicating the deletion.
+            - Exit the function.
+        v. If the user cancels deletion:
+            - Print a message indicating cancellation.
+            - Exit the function.
+2. If 'delete_from_index' is greater than 0:
+    a. Retrieve the note data corresponding to the provided index from the global 'notes' list.
+    b. Prompt the user for confirmation to delete the note.
+    c. If the user confirms deletion:
+        - Remove the note data from the global 'notes' list.
+        - Print a confirmation message indicating the deletion.
+    d. If the user cancels deletion:
+        - Print a message indicating cancellation.

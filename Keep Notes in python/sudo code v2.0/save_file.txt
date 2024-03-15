@@ -1,0 +1,17 @@
+Function: save_file
+
+Input: 
+  - data: The data to be saved (default: notes)
+
+Output: 
+  - True if the data is successfully saved, False otherwise
+
+Pseudocode:
+1. Try the following block of code:
+    a. Open a shelve storage file named "noteData".
+    b. Store the provided data under the key "notes" in the shelve storage.
+    c. Print a success message indicating that the data has been saved.
+    d. Return True to indicate successful data saving.
+2. If an exception occurs during the try block:
+    a. Print an error message indicating the issue.
+    b. Return False to indicate the failure to save the data.

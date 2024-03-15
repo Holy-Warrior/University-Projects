@@ -1,0 +1,21 @@
+Function: load_file
+
+Input: None
+
+Output: 
+  - List containing loaded notes data if successful, empty list otherwise
+
+Pseudocode:
+1. Try the following block of code:
+    a. Open the shelve storage file named "noteData".
+    b. Retrieve the data stored under the key "notes" from the shelve storage.
+    c. If data is retrieved successfully:
+        i. Check if the retrieved data is not empty and has at least one note (excluding the meta-data).
+        ii. If so, extend the global 'notes' list with the retrieved notes data, updating the meta-data accordingly.
+        iii. Return a list containing True and the number of notes loaded.
+    d. If no data is retrieved or the retrieved data is empty:
+        i. Print a message indicating no files found.
+        ii. Return a list containing False and 0 to indicate no data was loaded.
+2. If an exception occurs during the try block:
+    a. Print an error message indicating the issue.
+    b. Return a list containing False and 0 to indicate the failure to load data.

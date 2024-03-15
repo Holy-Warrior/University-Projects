@@ -1,0 +1,23 @@
+Function: note_editor
+
+Input: 
+  - note_index: The index of the note to be edited in the 'notes' list
+
+Output: None
+
+Pseudocode:
+1. Retrieve the note data corresponding to the provided 'note_index' from the global 'notes' list and store it in 'note_cache'.
+2. Display a message indicating that the user is editing the specified note.
+3. If the note has a heading:
+    a. Display an option to edit the heading.
+    b. If the user chooses to edit the heading:
+        i. Prompt the user to input a new heading using the 'tk_gui' function.
+        ii. If a new heading is provided:
+            - Update the heading in the 'note_cache'.
+        iii. If no new heading is provided:
+            - Set the heading to an empty string ('') in the 'note_cache'.
+4. Display the content of the note.
+5. Prompt the user to confirm saving the changes to the note.
+6. If the user confirms to save the changes:
+    a. Replace the original note data in the global 'notes' list with the updated 'note_cache'.
+7. Otherwise, display a message indicating that the changes have been discarded.

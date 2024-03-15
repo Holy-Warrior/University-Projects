@@ -1,0 +1,16 @@
+Function: tk_gui
+
+Input: 
+  - note_title (optional): Title for the note editing window (default: "Edit your note:")
+  - set_note (optional): Default text to display in the note editing window (default: "Type Here")
+
+Output: 
+  - User input text from the note editing window
+
+Pseudocode:
+1. Create a Tkinter window.
+2. Display a dialog window with a text input field, titled according to the 'note_title' parameter.
+3. Set the initial value of the text input field to 'set_note' parameter.
+4. Wait for the user to input text.
+5. Return the text input by the user.
+6. Close the Tkinter window.

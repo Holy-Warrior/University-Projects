@@ -1,0 +1,13 @@
+Function: is_empty
+
+Input: 
+  - user_input: The input string to be checked
+
+Output: 
+  - True if the input string is empty or contains only whitespace, False otherwise
+
+Pseudocode:
+1. Check if the 'user_input' string is empty or contains only whitespace characters:
+    a. If the 'user_input' is None or an empty string, return True.
+    b. If the 'user_input' consists only of whitespace characters after stripping leading and trailing whitespace, return True.
+2. Otherwise, return False.

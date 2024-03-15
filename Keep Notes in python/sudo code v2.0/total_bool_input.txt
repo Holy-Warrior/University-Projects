@@ -1,0 +1,16 @@
+Function: total_bool_input
+
+Input: 
+  - message (optional): A prompt message to display to the user
+
+Output: 
+  - True if the user input represents a positive boolean value, False otherwise
+
+Pseudocode:
+1. If a 'message' parameter is provided, display it to the user as a prompt message.
+2. Accept user input.
+3. Check if the user input represents a positive boolean value:
+    a. If the input is one of the recognized positive boolean values (e.g., "1", "True", "true", "Yes", "yes", etc.), return True.
+4. Check if the user input represents a negative boolean value:
+    a. If the input is one of the recognized negative boolean values (e.g., "0", "False", "false", "No", "no", etc.), return False.
+5. If the input does not match any recognized boolean value, print an error message and return an ambiguous response.

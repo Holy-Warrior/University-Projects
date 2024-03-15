@@ -1,0 +1,35 @@
+Function: menu
+
+Input: None
+
+Output: None
+
+Pseudocode:
+1. Check if there are any notes available:
+    a. If there are no notes available:
+        i. Print a message indicating that there are no notes to be seen.
+2. Display the main menu options to the user:
+    a. Insert a note.
+    b. Access a note (if notes are available).
+    c. Delete a note (if notes are available).
+    d. End the program.
+3. Prompt the user to choose an option from the main menu.
+4. Based on the user's choice:
+    a. If the choice is to insert a note:
+        i. Call the 'insert_note' function.
+    b. If the choice is to access a note:
+        i. If notes are available:
+            - Call the 'access_note' function.
+        ii. If notes are not available:
+            - Print a message indicating that there are no notes to access.
+    c. If the choice is to delete a note:
+        i. If notes are available:
+            - Call the 'delete_note' function.
+        ii. If notes are not available:
+            - Print a message indicating that there are no notes to delete.
+    d. If the choice is to end the program:
+        i. Print a message indicating that the program is closing.
+        ii. Call the 'save_file' function to save the notes data.
+        iii. Print a message indicating that the program has safely closed.
+        iv. Exit the program.
+5. Repeat steps 2-4 until the user chooses to end the program.

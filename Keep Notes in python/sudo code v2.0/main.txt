@@ -1,0 +1,26 @@
+1. Call the 'load_program' function to load notes data from the storage file.
+2. If notes data is successfully loaded:
+    a. Print a message indicating the number of notes loaded.
+3. If no notes data is loaded:
+    a. Print a message indicating that no files were found.
+4. Display the main menu options to the user:
+    a. Insert a note.
+    b. Access a note (if notes are available).
+    c. Delete a note (if notes are available).
+    d. End the program.
+5. Repeat the following steps until the user chooses to end the program:
+    a. Prompt the user to choose an option from the main menu.
+    b. Based on the user's choice:
+        i. If the choice is to insert a note:
+            - Call the 'insert_note' function.
+        ii. If the choice is to access a note:
+            - If notes are available, call the 'access_note' function.
+            - If notes are not available, print a message indicating that there are no notes to access.
+        iii. If the choice is to delete a note:
+            - If notes are available, call the 'delete_note' function.
+            - If notes are not available, print a message indicating that there are no notes to delete.
+        iv. If the choice is to end the program:
+            - Print a message indicating that the program is closing.
+            - Call the 'save_file' function to save the notes data.
+            - Print a message indicating that the program has safely closed.
+            - Exit the program.
